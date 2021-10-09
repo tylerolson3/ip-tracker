@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="search-box">
+      <h2>IP Address Tracker</h2>
+      <div class="testing">
+        <input type="text" class="search-content" placeholder="Search fo any IP address" id="search-input">
+        <button type="submit" class="search-btn" id="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>  
+        </button>
+      </div>
+      <!-- <input type="text" class="search-content" placeholder="Search for any IP or domain">
+      <input type=submit value="submit"> -->
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="menu">
+      <div class="box address">
+        <p class="title">IP ADDRESS</p>
+        <p class="results">139.243.101.303</p>
+      </div>
+      <div class="box location">
+        <p class="title">LOCATION</p>
+        <p class="results">Brooklyn, NY 10001</p>
+      </div>
+      <div class="box timezone">
+        <p class="title">TIMEZONE</p>
+        <!-- add offset value dynamically using the API -->
+        <p class="results">UTC-5:00</p>
+      </div>
+      <div class="box isp">
+        <p class="title">ISP</p>
+        <p class="results">SpaceX Starlink</p>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <footer>
+    <!-- <div>code by TO</div> -->
+  </footer>
+    <script src="app.js"></script>
+</body>
+</html>

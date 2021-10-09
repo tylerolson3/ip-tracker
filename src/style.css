@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0 auto;
+    background-color: lightpink;
+    font-family: 'Lato', sans-serif;
+    /* max-width: 1000px; */
+    
+}
+
+h2 {
+    color: white;
+}
+
+header {
+    background-image: url('./../images/pattern-bg.png');
+    height: 15rem;
+}
+
+.menu {
+    position: relative;
+    bottom: 4.5rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    /* min-width: 500px; */
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    border: none;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: rgba(149, 157, 165, 0.5) 5px 8px 14px;
+}
+
+.title {
+    font-size: .7rem;
+    margin-bottom: .7rem;
+    color: grey;
+}
+
+.results {
+    font-size: 1.1rem;
+    word-wrap: break-word;
+}
+
+
+
+.box {
+    border-left: 1px solid lightsteelblue;
+    padding-left: 1.3rem;
+    padding-right: 1rem;
+    min-width: 2rem;
+}
+
+.box.address {
+    border: none;
+}
+
+p {
+    max-width: 6.8rem;
+}
+
+header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.search-box {
+    position: relative;
+    bottom: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+.search-content {
+    height: 2.1rem;
+    width: 25rem;
+    margin: 0;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-indent: 20px;
+    max-width: 350px;
+}
+
+button {
+    position: relative;
+    width: 35px;
+    top: 1px;
+    margin: 0;
+    margin-left: -5px;
+    border: none;
+    height: 2.2rem;
+    padding: 0 .5rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: black;
+}
+
+@media (max-width: 750px) {
+
+    body {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        min-width: 80%;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: -3.8rem;
+    }
+    .search-content {
+        width: 15rem;
+        height: 50px;
+    }
+    .results {
+        word-wrap: none;
+        margin-top: .3rem;
+        margin-bottom: .7rem;
+    }
+    p {
+        max-width: none;
+        letter-spacing: .1rem;
+        margin-bottom: 1.3rem;
+    }
+    .title {
+        margin-bottom: .1rem;
+        margin-top: .5rem;
+    }
+    .box {
+        border-left: none;
+    }
+    button {
+        width: 45px;
+        height: 50px;
+    }
+
+    header {
+        height: 20rem;
+        background-size: cover;
+    }
+    h2 {
+        position: relative;
+        bottom: 2rem;
+        margin-bottom: -.9rem;
+    }
+}
