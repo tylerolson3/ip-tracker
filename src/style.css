@@ -8,7 +8,7 @@
 
 body {
     margin: 0 auto;
-    background-color: lightpink;
+    background-color: red;
     font-family: 'Lato', sans-serif;
     /* max-width: 1000px; */ 
 }
@@ -42,7 +42,7 @@ header {
     padding: 2rem 0;
     /* min-width: 500px; */
     display: flex;
-    width: 50%;
+    max-width: 70%;
     justify-content: space-between;
     border: none;
     background-color: white;
@@ -67,7 +67,7 @@ header {
     border-left: 1px solid lightsteelblue;
     padding-left: 1.3rem;
     padding-right: 1rem;
-    min-width: 2rem;
+    min-width: 3.5rem;
 }
 
 .box.address {
@@ -118,6 +118,13 @@ button {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: black;
+}
+
+#sample {
+    background-color: white;
+}
+#sample:hover {
+    background-color: green;
 }
 
 @media (max-width: 750px) {
