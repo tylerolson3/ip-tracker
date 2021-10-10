@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
@@ -31,27 +33,29 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="container"></div>
     <div class="menu">
       <div class="box address">
         <p class="title">IP ADDRESS</p>
-        <p class="results">139.243.101.303</p>
+        <p class="results" id="display-ip">139.243.101.303</p>
       </div>
       <div class="box location">
         <p class="title">LOCATION</p>
-        <p class="results">Brooklyn, NY 10001</p>
+        <p class="results" id="display-city">Brooklyn, NY 10001</p>
       </div>
       <div class="box timezone">
         <p class="title">TIMEZONE</p>
         <!-- add offset value dynamically using the API -->
-        <p class="results">UTC-5:00</p>
+        <p class="results" id="display-timezone">UTC-2:00</p>
       </div>
       <div class="box isp">
         <p class="title">ISP</p>
-        <p class="results">SpaceX Starlink</p>
+        <p class="results" id="display-isp">SpaceX Starlink</p>
       </div>
     </div>
+    <div id="mapid"></div>
   </div>
+
 
 
   
@@ -62,6 +66,10 @@
   <footer>
     <!-- <div>code by TO</div> -->
   </footer>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+    <script src="config.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

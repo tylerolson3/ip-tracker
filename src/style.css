@@ -10,8 +10,19 @@ body {
     margin: 0 auto;
     background-color: lightpink;
     font-family: 'Lato', sans-serif;
-    /* max-width: 1000px; */
-    
+    /* max-width: 1000px; */ 
+}
+
+
+
+#mapid {
+    background-color: lightpink;
+    height: 80vh;
+    /* height: 25rem; */
+    position: relative;
+    bottom: 7rem;
+    z-index: -100;
+    margin: 0;
 }
 
 h2 {
@@ -21,6 +32,7 @@ h2 {
 header {
     background-image: url('./../images/pattern-bg.png');
     height: 15rem;
+    /* height: 35vh; */
 }
 
 .menu {
